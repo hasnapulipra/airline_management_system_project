@@ -1,0 +1,46 @@
+{% extends 'admin_base.html' %}
+{% load static %}
+
+<body>
+  {% block content %}
+  <!-- <img src="{% static 'images/latest3.png' %}" class="w-100" alt="..."> -->
+  <section class="viewusers_section" style="padding-top:8%;">
+    <h2>View Users</h2>
+    <table class="table">
+        <thead>
+            <th>Full Name</th>
+            <th>Image</th>
+            <th>Contact</th>
+            <th>City</th>
+            <th>Email Id</th>
+            <th>Action</th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Full Name">Arun</td>
+                <td data-label="Image"><img src="{% static 'images/america.jpg' %}" alt="" width="25px;"></td>
+                <td data-label="Contact">9876543342</td>
+                <td data-label="City">India</td>
+                <td data-label="Email Id">arun123@gmail.com</td>
+                <td data-label="Action"><a href="" style="color:#ff4584;border:none;padding:5px;">Delete</a></td>
+            </tr>
+            <tr>
+                <td data-label="Full Name">Teena</td>
+                <td data-label="Image"><img src="{% static 'images/america.jpg' %}" alt="" width="25px;"></td>
+                <td data-label="Contact">9876654434</td>
+                <td data-label="City">India</td>
+                <td data-label="Email Id">teena123@gmail.com</td>
+                <td data-label="Action"><a href="" style="color:#ff4584;border:none;padding:5px;">Delete</a></td>
+            </tr>
+           
+
+        </tbody>
+    </table>
+    
+    </section>
+  {% endblock %}
+
+</body>
+
+  
